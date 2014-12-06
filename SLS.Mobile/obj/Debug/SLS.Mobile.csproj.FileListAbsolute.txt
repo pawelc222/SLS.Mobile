@@ -1,0 +1,14 @@
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\ApplicationIcon.png
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\Background.png
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\SLS.Mobile.dll
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\SLS.Mobile.pdb
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\AppManifest.xaml
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\SLS.Mobile.xap
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\Microsoft.Phone.Controls.dll
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\Microsoft.Phone.Controls.xml
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\App.g.i.cs
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\MainPage.g.i.cs
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.g.resources
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.dll
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.pdb
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\XapCacheFile.xml
