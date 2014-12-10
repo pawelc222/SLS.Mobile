@@ -2,5 +2,6 @@
   <Deployment.Parts>
     <AssemblyPart x:Name="SLS.Mobile" Source="SLS.Mobile.dll" />
     <AssemblyPart x:Name="Microsoft.Phone.Controls" Source="Microsoft.Phone.Controls.dll" />
+    <AssemblyPart Source="pl-PL/SLS.Mobile.resources.dll" />
   </Deployment.Parts>
 </Deployment>

@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_ISLSMobileService" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:1234/SLSMobile" binding="basicHttpBinding"
+                bindingConfiguration="BasicHttpBinding_ISLSMobileService"
+                contract="SLSMobile.ISLSMobileService" name="BasicHttpBinding_ISLSMobileService" />
+        </client>
+    </system.serviceModel>
+</configuration>

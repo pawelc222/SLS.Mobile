@@ -7,6 +7,7 @@
 
     <!--Application Resources-->
     <Application.Resources>
+        <local:LocalizedResx xmlns:local ="clr-namespace:SLS.Mobile" x:Key="LocalizedResx"/>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>

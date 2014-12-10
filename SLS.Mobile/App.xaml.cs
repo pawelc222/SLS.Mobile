@@ -12,24 +12,28 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using SLS.Mobile.ViewModels;
 
 namespace SLS.Mobile
 {
     public partial class App : Application
     {
-        private static MainViewModel viewModel = null;
+        private string _wcfServiceAddress;
+        private string _login;
+
+        private static BooksCollectionViewModel viewModel = null;
 
         /// <summary>
         /// A static ViewModel used by the views to bind against.
         /// </summary>
         /// <returns>The MainViewModel object.</returns>
-        public static MainViewModel ViewModel
+        public static BooksCollectionViewModel ViewModel
         {
             get
             {
                 // Delay creation of the view model until necessary
                 if (viewModel == null)
-                    viewModel = new MainViewModel();
+                    viewModel = new BooksCollectionViewModel();
 
                 return viewModel;
             }

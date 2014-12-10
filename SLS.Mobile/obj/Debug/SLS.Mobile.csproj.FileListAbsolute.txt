@@ -12,3 +12,10 @@ d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mob
 d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.dll
 d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.pdb
 d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\XapCacheFile.xml
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\icons\appbar.refresh.rest.png
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.Resources.AppResources.resources
+d:\dokumenty\visual studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.csproj.GenerateResource.Cache
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\pl-PL\SLS.Mobile.resources.dll
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.Resources.AppResources.pl-PL.resources
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\pl-PL\SLS.Mobile.resources.dll
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\Settings.g.i.cs
