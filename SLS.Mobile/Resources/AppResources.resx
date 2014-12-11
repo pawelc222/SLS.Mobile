@@ -120,17 +120,29 @@
   <data name="ApplicationTitle" xml:space="preserve">
     <value>SLS Mobile</value>
   </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author: </value>
+  </data>
+  <data name="BookTitle" xml:space="preserve">
+    <value>Book title: </value>
+  </data>
   <data name="BorrowedPivotName" xml:space="preserve">
     <value>Borrowed</value>
   </data>
   <data name="BorrowedTo" xml:space="preserve">
     <value>Borrowed to: </value>
   </data>
+  <data name="DetailsPivotName" xml:space="preserve">
+    <value>Details</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Username: </value>
   </data>
   <data name="MapPivotName" xml:space="preserve">
     <value>Map</value>
+  </data>
+  <data name="PhotoCover" xml:space="preserve">
+    <value>Take cover photo</value>
   </data>
   <data name="ServiceAddress" xml:space="preserve">
     <value>SLS Mobile Service address:</value>

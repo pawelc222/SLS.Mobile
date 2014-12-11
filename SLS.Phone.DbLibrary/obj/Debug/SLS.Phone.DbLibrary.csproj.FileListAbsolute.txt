@@ -1,0 +1,4 @@
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Phone.DbLibrary\Bin\Debug\SLS.Phone.DbLibrary.dll
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Phone.DbLibrary\Bin\Debug\SLS.Phone.DbLibrary.pdb
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Phone.DbLibrary\obj\Debug\SLS.Phone.DbLibrary.dll
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Phone.DbLibrary\obj\Debug\SLS.Phone.DbLibrary.pdb

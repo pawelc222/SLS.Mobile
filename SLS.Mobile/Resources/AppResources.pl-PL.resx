@@ -120,17 +120,29 @@
   <data name="ApplicationTitle" xml:space="preserve">
     <value>SLS Mobile wersja PL</value>
   </data>
+  <data name="Author" xml:space="preserve">
+    <value>Autor: </value>
+  </data>
+  <data name="BookTitle" xml:space="preserve">
+    <value>Tytuł: </value>
+  </data>
   <data name="BorrowedPivotName" xml:space="preserve">
     <value>Pożyczone</value>
   </data>
   <data name="BorrowedTo" xml:space="preserve">
     <value>Wypożyczone do:</value>
   </data>
+  <data name="DetailsPivotName" xml:space="preserve">
+    <value>Szczegóły</value>
+  </data>
   <data name="Login" xml:space="preserve">
     <value>Nazwa użytkownika: </value>
   </data>
   <data name="MapPivotName" xml:space="preserve">
     <value>Mapa</value>
+  </data>
+  <data name="PhotoCover" xml:space="preserve">
+    <value>Zrób zdjęcie okładki</value>
   </data>
   <data name="ServiceAddress" xml:space="preserve">
     <value>Adres serwisu SLS Mobile: </value>

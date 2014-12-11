@@ -19,7 +19,7 @@ namespace SLS.Mobile
     public partial class App : Application
     {
         private string _wcfServiceAddress;
-        private string _login;
+        private string _login = "janek";
 
         private static BooksCollectionViewModel viewModel = null;
 

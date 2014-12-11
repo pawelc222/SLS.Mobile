@@ -23,11 +23,29 @@ namespace SLS.Mobile
             this.Items = new ObservableCollection<ItemViewModel>();
         }
 
+        public void SetSelectedItem(ItemViewModel item)
+        {
+            SelectedItem = item;
+        }
         /// <summary>
         /// A collection for ItemViewModel objects.
         /// </summary>
         public ObservableCollection<ItemViewModel> Items { get; private set; }
 
+        private ItemViewModel _selectedItem;
+
+        public ItemViewModel SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                if (value != _selectedItem)
+                {
+                    _selectedItem = value;
+                    NotifyPropertyChanged("SelectedItem");
+                }
+            }
+        }
         private string _sampleProperty = "Sample Runtime Property Value";
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding

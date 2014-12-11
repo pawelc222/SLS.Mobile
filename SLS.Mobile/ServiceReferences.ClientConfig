@@ -9,7 +9,7 @@
             </basicHttpBinding>
         </bindings>
         <client>
-            <endpoint address="http://localhost:1234/SLSMobile" binding="basicHttpBinding"
+            <endpoint address="http://192.168.10.101:1234/SLSMobile" binding="basicHttpBinding"
                 bindingConfiguration="BasicHttpBinding_ISLSMobileService"
                 contract="SLSMobile.ISLSMobileService" name="BasicHttpBinding_ISLSMobileService" />
         </client>

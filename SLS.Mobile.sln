@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLS.Mobile", "SLS.Mobile\SLS.Mobile.csproj", "{10591E9C-4ADE-49D9-9535-FD8901B1AD86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLS.Phone.DbLibrary", "SLS.Phone.DbLibrary\SLS.Phone.DbLibrary.csproj", "{1061E570-8A32-4D45-A4C6-3867AF587F9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{10591E9C-4ADE-49D9-9535-FD8901B1AD86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10591E9C-4ADE-49D9-9535-FD8901B1AD86}.Release|Any CPU.Build.0 = Release|Any CPU
 		{10591E9C-4ADE-49D9-9535-FD8901B1AD86}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1061E570-8A32-4D45-A4C6-3867AF587F9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1061E570-8A32-4D45-A4C6-3867AF587F9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1061E570-8A32-4D45-A4C6-3867AF587F9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1061E570-8A32-4D45-A4C6-3867AF587F9B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

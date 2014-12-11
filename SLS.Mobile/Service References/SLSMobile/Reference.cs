@@ -213,6 +213,11 @@ namespace SLS.Mobile.SLSMobile {
         System.IAsyncResult BeginReturnBook(int userId, int bookId, System.AsyncCallback callback, object asyncState);
         
         bool EndReturnBook(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ISLSMobileService/AddPushNotificationService", ReplyAction="http://tempuri.org/ISLSMobileService/AddPushNotificationServiceResponse")]
+        System.IAsyncResult BeginAddPushNotificationService(string address, System.AsyncCallback callback, object asyncState);
+        
+        void EndAddPushNotificationService(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -298,6 +303,12 @@ namespace SLS.Mobile.SLSMobile {
         
         private System.Threading.SendOrPostCallback onReturnBookCompletedDelegate;
         
+        private BeginOperationDelegate onBeginAddPushNotificationServiceDelegate;
+        
+        private EndOperationDelegate onEndAddPushNotificationServiceDelegate;
+        
+        private System.Threading.SendOrPostCallback onAddPushNotificationServiceCompletedDelegate;
+        
         private BeginOperationDelegate onBeginOpenDelegate;
         
         private EndOperationDelegate onEndOpenDelegate;
@@ -356,6 +367,8 @@ namespace SLS.Mobile.SLSMobile {
         public event System.EventHandler<BorrowBookCompletedEventArgs> BorrowBookCompleted;
         
         public event System.EventHandler<ReturnBookCompletedEventArgs> ReturnBookCompleted;
+        
+        public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> AddPushNotificationServiceCompleted;
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
         
@@ -503,6 +516,51 @@ namespace SLS.Mobile.SLSMobile {
                         bookId}, this.onEndReturnBookDelegate, this.onReturnBookCompletedDelegate, userState);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult SLS.Mobile.SLSMobile.ISLSMobileService.BeginAddPushNotificationService(string address, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginAddPushNotificationService(address, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void SLS.Mobile.SLSMobile.ISLSMobileService.EndAddPushNotificationService(System.IAsyncResult result) {
+            base.Channel.EndAddPushNotificationService(result);
+        }
+        
+        private System.IAsyncResult OnBeginAddPushNotificationService(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string address = ((string)(inValues[0]));
+            return ((SLS.Mobile.SLSMobile.ISLSMobileService)(this)).BeginAddPushNotificationService(address, callback, asyncState);
+        }
+        
+        private object[] OnEndAddPushNotificationService(System.IAsyncResult result) {
+            ((SLS.Mobile.SLSMobile.ISLSMobileService)(this)).EndAddPushNotificationService(result);
+            return null;
+        }
+        
+        private void OnAddPushNotificationServiceCompleted(object state) {
+            if ((this.AddPushNotificationServiceCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.AddPushNotificationServiceCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void AddPushNotificationServiceAsync(string address) {
+            this.AddPushNotificationServiceAsync(address, null);
+        }
+        
+        public void AddPushNotificationServiceAsync(string address, object userState) {
+            if ((this.onBeginAddPushNotificationServiceDelegate == null)) {
+                this.onBeginAddPushNotificationServiceDelegate = new BeginOperationDelegate(this.OnBeginAddPushNotificationService);
+            }
+            if ((this.onEndAddPushNotificationServiceDelegate == null)) {
+                this.onEndAddPushNotificationServiceDelegate = new EndOperationDelegate(this.OnEndAddPushNotificationService);
+            }
+            if ((this.onAddPushNotificationServiceCompletedDelegate == null)) {
+                this.onAddPushNotificationServiceCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnAddPushNotificationServiceCompleted);
+            }
+            base.InvokeAsync(this.onBeginAddPushNotificationServiceDelegate, new object[] {
+                        address}, this.onEndAddPushNotificationServiceDelegate, this.onAddPushNotificationServiceCompletedDelegate, userState);
+        }
+        
         private System.IAsyncResult OnBeginOpen(object[] inValues, System.AsyncCallback callback, object asyncState) {
             return ((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(callback, asyncState);
         }
@@ -618,6 +676,18 @@ namespace SLS.Mobile.SLSMobile {
                 object[] _args = new object[0];
                 bool _result = ((bool)(base.EndInvoke("ReturnBook", _args, result)));
                 return _result;
+            }
+            
+            public System.IAsyncResult BeginAddPushNotificationService(string address, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = address;
+                System.IAsyncResult _result = base.BeginInvoke("AddPushNotificationService", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public void EndAddPushNotificationService(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                base.EndInvoke("AddPushNotificationService", _args, result);
             }
         }
     }

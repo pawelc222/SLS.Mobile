@@ -8,6 +8,7 @@ using System.Windows.Ink;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace SLS.Mobile.ViewModels
@@ -44,6 +45,21 @@ namespace SLS.Mobile.ViewModels
             }
         }
 
+        private BitmapImage _coverImage = new BitmapImage();
+
+        public BitmapImage CoverImage
+        {
+            get { return _coverImage; }
+            set
+            {
+                if (value != _coverImage)
+                {
+                    _coverImage = value;
+                    NotifyPropertyChanged("CoverImage");
+                }
+            }
+        }
+        //BitmapImage bImage = new BitmapImage();
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
         {

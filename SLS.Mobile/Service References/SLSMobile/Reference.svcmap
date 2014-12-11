@@ -20,13 +20,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:1234/SLSMobile?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://192.168.10.101:1234/SLSMobile?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="SLSMobile.xsd" MetadataType="Schema" ID="89a94db7-42ba-4c9c-85f4-a6fdb35a4ca8" SourceId="1" SourceUrl="http://localhost:1234/SLSMobile?xsd=xsd0" />
-    <MetadataFile FileName="SLSMobile1.xsd" MetadataType="Schema" ID="130b9fcb-6b5e-412f-b15c-432d96c77c6c" SourceId="1" SourceUrl="http://localhost:1234/SLSMobile?xsd=xsd2" />
-    <MetadataFile FileName="SLSMobile2.xsd" MetadataType="Schema" ID="0879616e-92ff-43db-af7a-5f4c9b3f571b" SourceId="1" SourceUrl="http://localhost:1234/SLSMobile?xsd=xsd1" />
-    <MetadataFile FileName="SLSMobileService.wsdl" MetadataType="Wsdl" ID="671e466a-5476-43e1-b5f1-f26e60245b45" SourceId="1" SourceUrl="http://localhost:1234/SLSMobile?wsdl" />
+    <MetadataFile FileName="SLSMobile3.xsd" MetadataType="Schema" ID="50adc0f9-55d7-4f4e-9dd0-737b2c83d671" SourceId="1" SourceUrl="http://192.168.10.101:1234/SLSMobile?xsd=xsd2" />
+    <MetadataFile FileName="SLSMobile31.xsd" MetadataType="Schema" ID="10f7a9ae-1053-4e10-80d3-8fdd640830a8" SourceId="1" SourceUrl="http://192.168.10.101:1234/SLSMobile?xsd=xsd1" />
+    <MetadataFile FileName="SLSMobile32.xsd" MetadataType="Schema" ID="bd5fae07-87b0-4a66-af31-66a7fed60f2d" SourceId="1" SourceUrl="http://192.168.10.101:1234/SLSMobile?xsd=xsd0" />
+    <MetadataFile FileName="SLSMobileService1.wsdl" MetadataType="Wsdl" ID="489f26d5-2e04-40d5-91b9-4bff4d9b1c86" SourceId="1" SourceUrl="http://192.168.10.101:1234/SLSMobile?wsdl" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -70,6 +70,24 @@ namespace SLS.Mobile.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Author: .
+        /// </summary>
+        public static string Author {
+            get {
+                return ResourceManager.GetString("Author", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Book title: .
+        /// </summary>
+        public static string BookTitle {
+            get {
+                return ResourceManager.GetString("BookTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Borrowed.
         /// </summary>
         public static string BorrowedPivotName {
@@ -88,6 +106,15 @@ namespace SLS.Mobile.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Details.
+        /// </summary>
+        public static string DetailsPivotName {
+            get {
+                return ResourceManager.GetString("DetailsPivotName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Username: .
         /// </summary>
         public static string Login {
@@ -102,6 +129,15 @@ namespace SLS.Mobile.Resources {
         public static string MapPivotName {
             get {
                 return ResourceManager.GetString("MapPivotName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Take cover photo.
+        /// </summary>
+        public static string PhotoCover {
+            get {
+                return ResourceManager.GetString("PhotoCover", resourceCulture);
             }
         }
         

@@ -21,6 +21,21 @@ namespace SLS.Mobile.ViewModels
         }
         public ObservableCollection<BookViewModel> Items { get; private set; }
 
+        private BookViewModel _selectedItem;
+
+        public BookViewModel SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                if (value != _selectedItem)
+                {
+                    _selectedItem = value;
+                    NotifyPropertyChanged("SelectedItem");
+                }
+            }
+        }
+
         public bool IsDataLoaded
         {
             get;

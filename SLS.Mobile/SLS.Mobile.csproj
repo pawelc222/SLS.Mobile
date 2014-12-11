@@ -114,6 +114,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icons\appbar.favs.addto.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Tileback.png" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
     <None Include="Service References\SLSMobile\configuration91.svcinfo" />
@@ -122,28 +126,31 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="ServiceReferences.ClientConfig" />
-    <None Include="Service References\SLSMobile\SLS.Mobile.SLSMobile.Book.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\SLSMobile\SLSMobile.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SLSMobile\SLSMobile1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SLSMobile\SLSMobile2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\SLSMobile\SLSMobileService.wsdl" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="icons\appbar.feature.camera.rest.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ServiceReferences.ClientConfig" />
+    <None Include="Service References\SLSMobile\SLS.Mobile.SLSMobile.Book.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SLSMobile\SLSMobile3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SLSMobile\SLSMobile31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SLSMobile\SLSMobile32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SLSMobile\SLSMobileService1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="icons\appbar.refresh.rest.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
