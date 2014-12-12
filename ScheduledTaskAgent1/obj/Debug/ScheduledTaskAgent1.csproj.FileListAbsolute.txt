@@ -1,0 +1,7 @@
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\ScheduledTaskAgent1\Bin\Debug\SLS.Phone.DbLibrary.dll
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\ScheduledTaskAgent1\Bin\Debug\SLS.Phone.DbLibrary.pdb
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.csprojResolveAssemblyReference.cache
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb

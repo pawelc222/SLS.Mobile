@@ -63,7 +63,8 @@
             <shell:ApplicationBar.MenuItems>
                 <!--<shell:ApplicationBarMenuItem Text="{Binding Path=MyLocalizedResources.Settings, Source={StaticResource LocalizedResx}}" Click="ApplicationBarMenuItem_OnClick"/>-->
                 <shell:ApplicationBarMenuItem Text="Settings" Click="ApplicationBarMenuItem_OnClick"/>
-                <shell:ApplicationBarMenuItem Text="Update tile" Click="UpdateTile_OnClick"/>
+                <shell:ApplicationBarMenuItem Text="Refresh content" Click="UpdateTile_OnClick"/>
+                <shell:ApplicationBarMenuItem Text="Start agent" Click="StartPeriodicAgent_OnClick"/>
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
