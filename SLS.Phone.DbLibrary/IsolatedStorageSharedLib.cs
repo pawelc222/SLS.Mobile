@@ -11,7 +11,7 @@ using System.Windows.Shapes;
 
 namespace SLS.Phone.DbLibrary
 {
-    public class Class1
+    public class IsolatedStorageSharedLib
     {
 
     }

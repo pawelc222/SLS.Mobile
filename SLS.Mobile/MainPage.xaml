@@ -42,7 +42,7 @@
                 <!--Triple line list no text wrapping-->
                 <Grid x:Name="ContentPanel" Margin="0,0,0,0">
                     <StackPanel>
-                        <Image Height="360" HorizontalAlignment="Left" Margin="25,25,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="411" Source="{Binding SelectedItem.CoverImage}" />
+                        <Image Height="360"  HorizontalAlignment="Left" Margin="25,25,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="411" Source="{Binding SelectedItem.CoverImage}" />
                         <TextBlock TextWrapping="Wrap" Margin="0,0,0,0" Style="{StaticResource PhoneTextNormalStyle}">
                                   <Run Text="{Binding Path=MyLocalizedResources.BookTitle, Source={StaticResource LocalizedResx}}" />
                                   <Run Text="{Binding SelectedItem.Title}" />

@@ -21,3 +21,6 @@ D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\pl-PL\S
 D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.dll
 D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.pdb
 D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\XapCacheFile.xml
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.csprojResolveAssemblyReference.cache
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\SLS.Phone.DbLibrary.dll
+D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\SLS.Phone.DbLibrary.pdb

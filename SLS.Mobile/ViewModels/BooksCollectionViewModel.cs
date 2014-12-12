@@ -38,8 +38,7 @@ namespace SLS.Mobile.ViewModels
 
         public bool IsDataLoaded
         {
-            get;
-            private set;
+            get; set;
         }
 
         public void LoadData()
@@ -57,6 +56,23 @@ namespace SLS.Mobile.ViewModels
             if (null != handler)
             {
                 handler(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        internal void LoadDataFromStorage(System.Collections.Generic.List<Phone.DbLibrary.Classes.Book> list)
+        {
+            this.Items = new ObservableCollection<BookViewModel>();
+            if (list != null)
+            {
+                foreach (var book in list)
+                {
+                    book.ByteToImg();
+                    var b = new BookViewModel();
+                    b.Title = book.Title;
+                    b.ToDate = book.ToDate;
+                    b.CoverImage = book.CoverImage;
+                    this.Items.Add(b);
+                }
             }
         }
     }

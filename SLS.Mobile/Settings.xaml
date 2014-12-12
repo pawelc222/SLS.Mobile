@@ -30,9 +30,9 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel>
                 <TextBlock Text="{Binding Path=MyLocalizedResources.ServiceAddress, Source={StaticResource LocalizedResx}}" Margin="0,40,0,0"/>
-                <TextBox Margin="0,20,0,0"/>
+                <TextBox x:Name="WCFAddressTbx" Margin="0,20,0,0"/>
                 <TextBlock Text="{Binding Path=MyLocalizedResources.Login, Source={StaticResource LocalizedResx}}" Margin="0,40,0,0"/>
-                <TextBox Margin="0,20,0,0" />
+                <TextBox x:Name="UsernameTbx"  Margin="0,20,0,0" />
             </StackPanel>
         </Grid>
     </Grid>

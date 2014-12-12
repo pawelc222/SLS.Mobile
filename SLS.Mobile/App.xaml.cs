@@ -18,8 +18,8 @@ namespace SLS.Mobile
 {
     public partial class App : Application
     {
-        private string _wcfServiceAddress;
-        private string _login = "janek";
+        public static string WcfServiceAddress { get; set; }
+        public static string Login { get; set; }
 
         private static BooksCollectionViewModel viewModel = null;
 
@@ -165,5 +165,7 @@ namespace SLS.Mobile
         }
 
         #endregion
+
+        public static Phone.DbLibrary.IsoStorageData IsolatedData { get; set; }
     }
 }

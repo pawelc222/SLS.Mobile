@@ -172,6 +172,12 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\SLSMobile\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SLS.Phone.DbLibrary\SLS.Phone.DbLibrary.csproj">
+      <Project>{1061E570-8A32-4D45-A4C6-3867AF587F9B}</Project>
+      <Name>SLS.Phone.DbLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

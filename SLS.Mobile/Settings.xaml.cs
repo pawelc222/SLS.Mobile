@@ -8,8 +8,10 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
+using SLS.Phone.DbLibrary;
 
 namespace SLS.Mobile
 {
@@ -18,6 +20,24 @@ namespace SLS.Mobile
         public Settings()
         {
             InitializeComponent();
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+            App.IsolatedData.SLSMobileServiceAddress = WCFAddressTbx.Text;
+            App.IsolatedData.Username = UsernameTbx.Text;
+            MutexedIsoStorageFile.Write(App.IsolatedData);
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            if (!App.IsolatedData.FirstRun)
+            {
+                base.OnNavigatedTo(e);
+                WCFAddressTbx.Text = App.WcfServiceAddress;
+                UsernameTbx.Text = App.Login;
+            }
         }
     }
 }

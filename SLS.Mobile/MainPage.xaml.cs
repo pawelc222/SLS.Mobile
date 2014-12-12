@@ -10,12 +10,16 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Notification;
+using Microsoft.Phone.Scheduler;
 using Microsoft.Phone.Tasks;
 using SLS.Mobile.SLSMobile;
 using SLS.Mobile.ViewModels;
+using SLS.Phone.DbLibrary;
+using Book = SLS.Phone.DbLibrary.Classes.Book;
 
 namespace SLS.Mobile
 {
@@ -23,6 +27,7 @@ namespace SLS.Mobile
     {
        // private BookViewModel selectedBook;
         // Constructor
+        private bool takingPhoto = false;
         public MainPage()
         {
             // Holds the push channel that is created or found.
@@ -127,6 +132,7 @@ namespace SLS.Mobile
 
         private void TakePhotoButton_OnClick(object sender, EventArgs e)
         {
+            takingPhoto = true;
             CameraCaptureTask pcTask = new CameraCaptureTask();
             pcTask.Completed += new EventHandler<PhotoResult>(pcTask_Completed);
             pcTask.Show(); 
@@ -136,6 +142,7 @@ namespace SLS.Mobile
             switch (e.TaskResult)
             {
                 case TaskResult.OK:
+                    App.ViewModel.SelectedItem.CoverImage = new BitmapImage();
                     App.ViewModel.SelectedItem.CoverImage.SetSource(e.ChosenPhoto);
                     break;
                 case TaskResult.Cancel:
@@ -155,7 +162,62 @@ namespace SLS.Mobile
 
         private void RemindButton_OnClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            foreach (var book in App.ViewModel.Items)
+            {
+                Reminder reminder = new Reminder("Book return: " + book.Title);
+                reminder.Title = book.Title;
+                reminder.Content = "Please come to library and return book";
+                reminder.BeginTime = DateTime.Now.AddSeconds(5.0);
+                reminder.ExpirationTime = DateTime.Now.AddSeconds(30.0);//book.ToDate;
+                reminder.RecurrenceType = RecurrenceInterval.None;
+                reminder.NavigationUri = new Uri("/MainPage.xaml", UriKind.Relative);
+                
+                // Register the reminder with the system.
+                ScheduledActionService.Add(reminder);
+            }
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if (takingPhoto)
+            {
+                takingPhoto = false;
+                return;
+            }
+                App.IsolatedData = MutexedIsoStorageFile.Read();
+                if (!App.IsolatedData.FirstRun)
+                {
+                    App.Login = App.IsolatedData.Username;
+                    App.WcfServiceAddress = App.IsolatedData.SLSMobileServiceAddress;
+                    App.ViewModel.LoadDataFromStorage(App.IsolatedData.BorrowedBooks);
+                    App.ViewModel.IsDataLoaded = true;
+                }
+                else
+                {
+                    App.IsolatedData.Username = "janek";
+                    App.IsolatedData.SLSMobileServiceAddress = @"http://192.168.10.101/SLSMobile?wsdl";
+                    App.IsolatedData.FirstRun = false;
+                }
+            
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            
+            App.IsolatedData.BorrowedBooks = new List<Book>();
+            foreach (var item in App.ViewModel.Items)
+            {
+                var b = new Book();
+                b.Title = item.Title;
+                b.ToDate = item.ToDate;
+                b.CoverImage = item.CoverImage;
+                b.ImgToByte();
+                App.IsolatedData.BorrowedBooks.Add(b);
+            }
+            
+            MutexedIsoStorageFile.Write(App.IsolatedData);
+            base.OnNavigatedFrom(e);
         }
     }
 }

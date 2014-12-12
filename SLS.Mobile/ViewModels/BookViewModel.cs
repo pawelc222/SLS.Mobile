@@ -59,6 +59,7 @@ namespace SLS.Mobile.ViewModels
                 }
             }
         }
+
         //BitmapImage bImage = new BitmapImage();
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
