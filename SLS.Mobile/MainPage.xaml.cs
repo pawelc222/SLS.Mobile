@@ -12,6 +12,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Notification;
 using Microsoft.Phone.Scheduler;
@@ -70,7 +71,6 @@ namespace SLS.Mobile
                 //MessageBox.Show(String.Format("Channel Uri is {0}",
                 //    pushChannel.ChannelUri.ToString()));
 
-
                 SendChannelUriToService(pushChannel.ChannelUri.AbsoluteUri);
             }
             
@@ -98,7 +98,6 @@ namespace SLS.Mobile
                 System.Diagnostics.Debug.WriteLine(e.ChannelUri.ToString());
                 MessageBox.Show(String.Format("Channel Uri is {0}",
                     e.ChannelUri.ToString()));
-
             });
             
         }
@@ -127,7 +126,10 @@ namespace SLS.Mobile
 
         private void UpdateTile_OnClick(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            App.IsolatedData = MutexedIsoStorageFile.Read();
+            App.ViewModel.LoadDataFromStorage(App.IsolatedData.BorrowedBooks);
+            BooksListBox.ItemsSource = null;
+            BooksListBox.ItemsSource = App.ViewModel.Items;
         }
 
         private void TakePhotoButton_OnClick(object sender, EventArgs e)
@@ -152,12 +154,10 @@ namespace SLS.Mobile
 
         private void BooksListBox_OnSelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
             if (BooksListBox.SelectedIndex >= 0)
             {
                 App.ViewModel.SelectedItem = BooksListBox.SelectedItem as BookViewModel;
             }
-            
         }
 
         private void RemindButton_OnClick(object sender, EventArgs e)
@@ -218,6 +218,29 @@ namespace SLS.Mobile
             
             MutexedIsoStorageFile.Write(App.IsolatedData);
             base.OnNavigatedFrom(e);
+        }
+
+        private void SyncButton_OnClick(object sender, EventArgs e)
+        {
+            SLSMobileDataProvider dp = new SLSMobileDataProvider();
+            dp.SyncData();
+            DispatcherTimer newTimer = new DispatcherTimer();
+            // timer interval specified as 1 second
+            newTimer.Interval = TimeSpan.FromSeconds(2);
+            // Sub-routine OnTimerTick will be called at every 1 second
+            newTimer.Tick += OnTimerTick;
+            // starting the timer
+            newTimer.Start();
+            
+        }
+        void OnTimerTick(Object sender, EventArgs args)
+        {
+            Dispatcher.BeginInvoke(() => MessageBox.Show("Refreshing data..."));
+
+            App.IsolatedData = MutexedIsoStorageFile.Read();
+            App.ViewModel.LoadDataFromStorage(App.IsolatedData.BorrowedBooks);
+            BooksListBox.ItemsSource = null;
+            BooksListBox.ItemsSource = App.ViewModel.Items;
         }
     }
 }

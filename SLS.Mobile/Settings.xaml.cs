@@ -34,10 +34,10 @@ namespace SLS.Mobile
         {
             if (!App.IsolatedData.FirstRun)
             {
-                base.OnNavigatedTo(e);
                 WCFAddressTbx.Text = App.WcfServiceAddress;
                 UsernameTbx.Text = App.Login;
             }
+            base.OnNavigatedTo(e);
         }
     }
 }

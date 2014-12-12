@@ -37,6 +37,7 @@ namespace SLS.Phone.DbLibrary
                 b.ToDate = book.ToDate;
                 sharedData.BorrowedBooks.Add(b);
             }
+            MutexedIsoStorageFile.Write(sharedData);
         }
     }
 }

@@ -43,13 +43,9 @@
                 <Grid x:Name="ContentPanel" Margin="0,0,0,0">
                     <StackPanel>
                         <Image Height="360"  HorizontalAlignment="Left" Margin="25,25,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="411" Source="{Binding SelectedItem.CoverImage}" />
-                        <TextBlock TextWrapping="Wrap" Margin="0,0,0,0" Style="{StaticResource PhoneTextNormalStyle}">
+                        <TextBlock TextWrapping="Wrap" Margin="0,0,0,0" Style="{StaticResource PhoneTextLargeStyle}">
                                   <Run Text="{Binding Path=MyLocalizedResources.BookTitle, Source={StaticResource LocalizedResx}}" />
                                   <Run Text="{Binding SelectedItem.Title}" />
-                        </TextBlock>
-                        <TextBlock TextWrapping="Wrap" Margin="0,0,0,0" Style="{StaticResource PhoneTextNormalStyle}">
-                                  <Run Text="{Binding Path=MyLocalizedResources.Author, Source={StaticResource LocalizedResx}}" />
-                                  <Run Text="{Binding SelectedItem.Author}" />
                         </TextBlock>
                     </StackPanel>
                 </Grid>
@@ -61,7 +57,7 @@
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
             <!--<shell:ApplicationBarIconButton IconUri="/icons/appbar.refresh.rest.png" Text="{Binding Path=MyLocalizedResources.Sync, Source={StaticResource LocalizedResx}}"/>-->
-            <shell:ApplicationBarIconButton IconUri="/icons/appbar.refresh.rest.png" Text="Sync"/>
+            <shell:ApplicationBarIconButton IconUri="/icons/appbar.refresh.rest.png" Text="Sync" Click="SyncButton_OnClick"/>
             <shell:ApplicationBarIconButton IconUri="/icons/appbar.feature.camera.rest.png" Text="Cover Photo" Click="TakePhotoButton_OnClick"/>
             <shell:ApplicationBarIconButton IconUri="/icons/appbar.favs.addto.rest.png" Text="Remind Me" Click="RemindButton_OnClick"/>
             <shell:ApplicationBar.MenuItems>

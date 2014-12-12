@@ -1,11 +1,11 @@
-﻿<xapCache source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\SLS.Mobile.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2014-12-12 01:33:15">
+﻿<xapCache source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\SLS.Mobile.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2014-12-12 02:16:08">
   <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2014-12-06 18:29:36" />
   <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\Background.png" archivePath="Background.png" lastWriteTime="2014-12-11 00:07:35" />
   <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2014-12-11 00:08:15" />
-  <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.dll" archivePath="SLS.Mobile.dll" lastWriteTime="2014-12-12 01:33:14" />
+  <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\SLS.Mobile.dll" archivePath="SLS.Mobile.dll" lastWriteTime="2014-12-12 02:16:07" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="2012-07-06 02:40:16" />
-  <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Phone.DbLibrary\Bin\Debug\SLS.Phone.DbLibrary.dll" archivePath="SLS.Phone.DbLibrary.dll" lastWriteTime="2014-12-12 00:55:21" />
-  <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\pl-PL\SLS.Mobile.resources.dll" archivePath="pl-PL\SLS.Mobile.resources.dll" lastWriteTime="2014-12-12 01:33:15" />
+  <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Phone.DbLibrary\Bin\Debug\SLS.Phone.DbLibrary.dll" archivePath="SLS.Phone.DbLibrary.dll" lastWriteTime="2014-12-12 01:52:55" />
+  <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\obj\Debug\pl-PL\SLS.Mobile.resources.dll" archivePath="pl-PL\SLS.Mobile.resources.dll" lastWriteTime="2014-12-12 02:16:08" />
   <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\icons\appbar.favs.addto.rest.png" archivePath="icons\appbar.favs.addto.rest.png" lastWriteTime="2012-07-06 02:38:22" />
   <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\Tileback.png" archivePath="Tileback.png" lastWriteTime="2014-12-11 00:28:17" />
   <file source="D:\Dokumenty\Visual Studio 2010\Projects\SLS.Mobile\SLS.Mobile\icons\appbar.feature.camera.rest.png" archivePath="icons\appbar.feature.camera.rest.png" lastWriteTime="2012-07-06 02:38:22" />
